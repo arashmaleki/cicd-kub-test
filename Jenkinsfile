@@ -22,7 +22,7 @@ pipeline {
 
                 //  Pushing Image to Repository
                 //sh 'docker tag cicd-kub-test:latest arashmaleki77/cicd-kub-test'
-                sh 'docker push arashmaleki77/cicd-kub-test:$BUILD_NUMBER'
+                //sh 'docker push arashmaleki77/cicd-kub-test:$BUILD_NUMBER'
                 sh 'docker push arashmaleki77/cicd-kub-test:latest'
 
                 echo "Image built and pushed to repository"
