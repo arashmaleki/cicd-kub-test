@@ -16,13 +16,15 @@ pipeline {
         }
         stage('Build') {
             steps {
+                sh 'docker login -u arashmaleki77 -p Avrillavigne20'
+
                 //  Building new image
                 sh 'docker image build -t $DOCKER_HUB_REPO:latest .'
                 sh 'docker image tag $DOCKER_HUB_REPO:latest $DOCKER_HUB_REPO:$BUILD_NUMBER'
 
                 //  Pushing Image to Repository
                 sh 'docker tag mylocalimage:latest arashmaleki77/cicd-kub-test'
-                //sh 'docker push arashmaleki77/cicd-kub-test:$BUILD_NUMBER'
+                sh 'docker push arashmaleki77/cicd-kub-test:$BUILD_NUMBER'
                 sh 'docker push arashmaleki77/cicd-kub-test:latest'
 
                 echo "Image built and pushed to repository"
