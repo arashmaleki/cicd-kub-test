@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f25209ff-9078-4f49-9338-d8f07f27b4fb" name="Changes" comment="" />
+    <list default="true" id="f25209ff-9078-4f49-9338-d8f07f27b4fb" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -177,7 +180,28 @@
       <option name="project" value="LOCAL" />
       <updated>1648925230816</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="change python version in Dockerfile">
+      <created>1648927439278</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1648927439278</updated>
+    </task>
+    <task id="LOCAL-00016" summary="remove EXPOSE 5000">
+      <created>1648927547394</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1648927547394</updated>
+    </task>
+    <task id="LOCAL-00017" summary="EXPOSE 5000 in Dockerfile">
+      <created>1648927606254</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1648927606254</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -198,6 +222,8 @@
     <MESSAGE value="init" />
     <MESSAGE value="change" />
     <MESSAGE value="change python version in Dockerfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="change python version in Dockerfile" />
+    <MESSAGE value="remove EXPOSE 5000" />
+    <MESSAGE value="EXPOSE 5000 in Dockerfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="EXPOSE 5000 in Dockerfile" />
   </component>
 </project>
