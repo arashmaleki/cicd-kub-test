@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        DOCKER_HUB_REPO = "arashmaleki/cicd-kub-test"
+        DOCKER_HUB_REPO = "arashmaleki77/cicd-kub-test"
         CONTAINER_NAME = "flask-container"
         STUB_VALUE = "200"
     }
@@ -21,9 +21,9 @@ pipeline {
                 sh 'docker image tag $DOCKER_HUB_REPO:latest $DOCKER_HUB_REPO:$BUILD_NUMBER'
 
                 //  Pushing Image to Repository
-                sh 'docker tag cicd-kub-test:latest arashmaleki/cicd-kub-test'
-                sh 'docker push arashmaleki/cicd-kub-test:$BUILD_NUMBER'
-                sh 'docker push arashmaleki/cicd-kub-test:latest'
+                sh 'docker tag cicd-kub-test:latest arashmaleki77/cicd-kub-test'
+                sh 'docker push arashmaleki77/cicd-kub-test:$BUILD_NUMBER'
+                sh 'docker push arashmaleki77/cicd-kub-test:latest'
 
                 echo "Image built and pushed to repository"
             }
