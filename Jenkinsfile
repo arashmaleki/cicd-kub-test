@@ -21,7 +21,7 @@ pipeline {
                 sh 'docker image tag $DOCKER_HUB_REPO:latest $DOCKER_HUB_REPO:$BUILD_NUMBER'
 
                 //  Pushing Image to Repository
-                //sh 'docker tag cicd-kub-test:latest arashmaleki77/cicd-kub-test'
+                sh 'docker tag mylocalimage:latest arashmaleki77/cicd-kub-test'
                 //sh 'docker push arashmaleki77/cicd-kub-test:$BUILD_NUMBER'
                 sh 'docker push arashmaleki77/cicd-kub-test:latest'
 
