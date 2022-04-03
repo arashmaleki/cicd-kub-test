@@ -44,6 +44,7 @@ nosetests.xml
 coverage.xml
 .idea/
 .idea
+idea/
 
 # Translations
 *.mo
